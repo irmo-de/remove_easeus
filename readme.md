@@ -1,4 +1,4 @@
-EaseUS Data Recovery Wizard Free installs a kernel driver but has no uninstaller
+# EaseUS Data Recovery Wizard Free installs a kernel driver but has no uninstaller
 Version 2025
 
 You need a terminal window to do this.
@@ -29,6 +29,7 @@ sudo rm -rf ~/.easeus/
 Rebuild the kernel cache
 ```
 sudo kmutil install --update-all --volume-root /
+sudo kextcache -i /   
 ```
 
 
