@@ -1,4 +1,5 @@
-# EaseUS Data Recovery Wizard Free installs a kernel driver but has no uninstaller
+# EaseUS Data Recovery Wizard Free uninstaller
+EaseUS Data Recovery Wizard Free installs a kernel driver but has no uninstaller
 Version 2025
 
 You need a terminal window to do this.
@@ -32,12 +33,20 @@ sudo kmutil install --update-all --volume-root /
 sudo kextcache -i /   
 ```
 
+### Delete EaseUS Data Recovery Wizard Free App
+Use finder to delelete the App in 
+```/Applications/```
 
 ### Uninstall files
 ```
 sudo rm -rf ~/Library/Application\ Support/EaseUS
 sudo rm -rf ~/Library/Preferences/com.easeus.datarecoverynet
 sudo rm -rf ~/Library/Caches/com.easeus.datarecoverynet
+sudo rm -rf ~/Library/Application\ Support/com.easeus.datarecoverynet
+sudo rm -rf ~/Library/Application\ Support/EaseUSDownloader/
+sudo rm -rf /private/var/root/Library/Preferences/com.easeus.datarecoverynet.plist
+sudo rm -rf ~/Library/Preferences/com.easeus.downloaderformacdrw.plist
+sudo rm -rf ~/Library/Preferences/com.easeus.datarecoverynet
 ```
 
 
